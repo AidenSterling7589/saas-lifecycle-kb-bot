@@ -1,0 +1,26 @@
+{
+  "name": "saas-lifecycle-kb-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/operations_desk.ts",
+    "seed": "tsx scripts/seed_knowledge.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/lifecycle_decision.test.ts"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "openai": "^5.12.2",
+    "zod": "^4.0.17"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.17.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
